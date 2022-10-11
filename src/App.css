@@ -1,38 +1,250 @@
-.App {
+html, body, #app, #app>div {
+  height: 100%;
+  background-color: #121212;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  cursor: default;
+  font-size: 25px;
+  margin-top: 25px;
+  
+}
+
+.title {
+  color: white;
   text-align: center;
+  border-radius:100px;
+  width: 600px;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #101b1d;
+  border-right: 3px solid black;
+  border-bottom: 5px solid black;
+  padding: 10px;
+  font-size: 55px;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subTitles {
+  text-align: center;
+  font-weight: bold;
+  background-color: #063036;
+  border-radius: 50px;
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profileTitles {
+  margin-top: 5px;
+  text-align: center;
+  padding: 2px;
+  font-weight: bold;
+  background-color: #063036;
+  border-radius: 50px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.generalContainer {
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  width: 800px;
+  display: column;
+  color: rgb(255, 255, 255);
+  background-color: #101b1d; 
+  padding: 25px;
+  border-radius: 20px;
+  border-right: 3px solid black;
+  border-bottom: 4px solid black;
+  border-left: 0.5px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rows {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.addIcon {
+  align-self: end;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+}
+
+.addIcon:hover {
+  cursor: pointer;
+  color: #0f5012;
+}
+.deleteIcon {
+  float: right;
+  height: 30px;
+  width: 30px;
+}
+
+.deleteIcon:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.loginButton {
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 35px;
+  background-color: #0559a7;
+}
+
+.loginButton:hover {
+  cursor: pointer; 
+  background-color: #01325f;
+  color: white
+}
+
+.deleteAccountButton {
+  float: right;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 35px;
+  background-color: red;
+ 
+}
+
+.disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.registerButton {
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 35px;
+  background-color: #c57d3a;
+}
+
+.registerButton:hover {
+  cursor: pointer; 
+  color: white;
+  background-color: #a15309;
+}
+
+.avatarIcon {
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.avatarIcon:hover {
+  cursor: pointer;
+  color: rgb(74, 136, 194);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputs {
+  resize: none;
+  height: 100px;
+  width: 90%;
+  background-color: #f3f3f3;
+  border-width: 3px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 4px;
 }
+
+.displayText {
+  resize: none;
+  height: 100px;
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.updateInputs {
+  padding: 3px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 96%;
+}
+
+.violet {
+  background-color: #450081;
+}
+
+.green {
+  background-color: #003600;
+}
+
+.red {
+  background-color: #360005;
+}
+
+.mustard {
+  background-color: #4e3900;
+}
+
+.loginContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  margin-top: 10%;
+  border-right: 3px solid black;
+  border-bottom: 4px solid black;
+  padding: 50px;
+  background-color: #101b1d;
+  border-radius: 20px;
+  color: white;
+}
+
+.profileContainer {
+  margin-right: 5%;
+  margin-left: 10%;
+  border-right: 3px solid black;
+  border-bottom: 4px solid black;
+  padding: 20px;
+  background-color: #101b1d;
+  border-radius: 20px;
+  width: 200px;
+  color: white;
+  align-self: start;
+}
+
+.profileImg {
+  margin-left: 25%;
+  width: 100px;
+}
+
+.displayImg {
+  float: right;
+  height: 55px;
+  width: 55px;
+}
+
+.selection {
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid black;
+  width: 20px;
+  background-color: #01325f;
+}
+
+.selection:hover {
+  background-color: #014788;
+}
+
